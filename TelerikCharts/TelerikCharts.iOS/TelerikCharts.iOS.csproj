@@ -119,6 +119,21 @@
     <Reference Include="System" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
+    <Reference Include="Telerik.Xamarin.iOS">
+      <HintPath>..\..\..\..\Program Files (x86)\Telerik\UI for Xamarin Q2 2016\Binaries\iOS\Telerik.Xamarin.iOS.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.XamarinForms.Chart">
+      <HintPath>..\..\..\..\Program Files (x86)\Telerik\UI for Xamarin Q2 2016\Binaries\XamarinForms\Common\Telerik.XamarinForms.Chart.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.XamarinForms.ChartRenderer.iOS">
+      <HintPath>..\..\..\..\Program Files (x86)\Telerik\UI for Xamarin Q2 2016\Binaries\XamarinForms\iOS\Telerik.XamarinForms.ChartRenderer.iOS.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.XamarinForms.Common">
+      <HintPath>..\..\..\..\Program Files (x86)\Telerik\UI for Xamarin Q2 2016\Binaries\XamarinForms\Common\Telerik.XamarinForms.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.XamarinForms.Common.iOS">
+      <HintPath>..\..\..\..\Program Files (x86)\Telerik\UI for Xamarin Q2 2016\Binaries\XamarinForms\iOS\Telerik.XamarinForms.Common.iOS.dll</HintPath>
+    </Reference>
     <Reference Include="Xamarin.Forms.Core, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\..\packages\Xamarin.Forms.2.0.0.6482\lib\Xamarin.iOS10\Xamarin.Forms.Core.dll</HintPath>
       <Private>True</Private>
