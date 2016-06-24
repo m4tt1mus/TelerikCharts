@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 
 using Foundation;
+using Telerik.XamarinForms.ChartRenderer.iOS;
 using UIKit;
 
 namespace TelerikCharts.iOS
@@ -11,6 +12,8 @@ namespace TelerikCharts.iOS
     // User Interface of the application, as well as listening (and optionally responding) to 
     // application events from iOS.
     [Register("AppDelegate")]
+    [assembly: Xamarin.Forms.ExportRenderer(typeof(Telerik.XamarinForms.Chart.RadCartesianChart), typeof(Telerik.XamarinForms.ChartRenderer.iOS.CartesianChartRenderer))]
+    [assembly: Xamarin.Forms.ExportRenderer(typeof(Telerik.XamarinForms.Chart.RadPieChart), typeof(Telerik.XamarinForms.ChartRenderer.iOS.PieChartRenderer))]
     public partial class AppDelegate : global::Xamarin.Forms.Platform.iOS.FormsApplicationDelegate
     {
         //
@@ -22,9 +25,13 @@ namespace TelerikCharts.iOS
         //
         public override bool FinishedLaunching(UIApplication app, NSDictionary options)
         {
-            global::Xamarin.Forms.Forms.Init();
-            LoadApplication(new App());
+            new CartesianChartRenderer();
+            new PieChartRenderer();
 
+            global::Xamarin.Forms.Forms.Init();
+            Telerik.XamarinForms.Common.iOS.TelerikForms.Init();
+
+            LoadApplication(new App());
             return base.FinishedLaunching(app, options);
         }
     }
