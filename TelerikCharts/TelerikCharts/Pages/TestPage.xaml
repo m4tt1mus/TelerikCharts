@@ -3,7 +3,8 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:TelerikCharts;assembly=TelerikCharts"
              xmlns:telerik="clr-namespace:Telerik.XamarinForms.Chart;assembly=Telerik.XamarinForms.Chart"
-             x:Class="TelerikCharts.TestPage">
+             xmlns:pages="clr-namespace:TelerikCharts.Pages;assembly=TelerikCharts"
+             x:Class="TelerikCharts.Pages.TestPage">
   <ContentPage.Content>
     <Grid BackgroundColor="White">
       <Grid.RowDefinitions>
@@ -11,9 +12,9 @@
         <RowDefinition/>
       </Grid.RowDefinitions>
       <SearchBar x:Name="ParameterSearch" Placeholder="Search parameters"/>
-      <local:CustomListView ItemsSource="{Binding}" Grid.Row="1">
+      <pages:CustomListView ItemsSource="{Binding}" Grid.Row="1">
 
-        <local:CustomListView.ItemTemplate>
+        <pages:CustomListView.ItemTemplate>
           <DataTemplate>
             <ViewCell>
               <Grid HeightRequest="150">
@@ -38,9 +39,9 @@
               </Grid>
             </ViewCell>
           </DataTemplate>
-        </local:CustomListView.ItemTemplate>
+        </pages:CustomListView.ItemTemplate>
 
-      </local:CustomListView>
+      </pages:CustomListView>
     </Grid>
   </ContentPage.Content>
 </ContentPage>
