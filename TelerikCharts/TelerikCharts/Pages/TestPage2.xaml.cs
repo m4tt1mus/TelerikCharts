@@ -21,5 +21,10 @@ namespace TelerikCharts.Pages
             _viewModel = new TestPage2ViewModel();
             this.BindingContext = _viewModel;
         }
+
+        protected override void OnAppearing()
+        {
+            _viewModel.GenData = true;
+        }
     }
 }

@@ -3,24 +3,26 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:telerik="clr-namespace:Telerik.XamarinForms.Chart;assembly=Telerik.XamarinForms.Chart"
              x:Class="TelerikCharts.Pages.TestPage2">
-  <StackLayout Orientation="Vertical" VerticalOptions="FillAndExpand">
-    <telerik:RadCartesianChart x:Name="ParameterChart" HeightRequest="100" VerticalOptions="Center">
-      <telerik:RadCartesianChart.HorizontalAxis>
-        <telerik:DateTimeContinuousAxis ShowLabels="False" />
-      </telerik:RadCartesianChart.HorizontalAxis>
-      <telerik:RadCartesianChart.VerticalAxis>
-        <telerik:NumericalAxis ShowLabels="False" />
-      </telerik:RadCartesianChart.VerticalAxis>
-      <telerik:RadCartesianChart.Series>
-        <telerik:ScatterLineSeries ItemsSource="{Binding ParameterValues}">
-          <telerik:ScatterLineSeries.XValueBinding>
-            <telerik:PropertyNameDataPointBinding PropertyName="Timestamp"/>
-          </telerik:ScatterLineSeries.XValueBinding>
-          <telerik:ScatterLineSeries.YValueBinding>
-            <telerik:PropertyNameDataPointBinding PropertyName="Value"/>
-          </telerik:ScatterLineSeries.YValueBinding>
-        </telerik:ScatterLineSeries>
-      </telerik:RadCartesianChart.Series>
-    </telerik:RadCartesianChart>
-  </StackLayout>
+  <ContentPage.Content>
+    <StackLayout Orientation="Vertical" VerticalOptions="FillAndExpand">
+      <telerik:RadCartesianChart x:Name="ParameterChart" HeightRequest="100" VerticalOptions="Center">
+        <telerik:RadCartesianChart.HorizontalAxis>
+          <telerik:DateTimeContinuousAxis ShowLabels="False" />
+        </telerik:RadCartesianChart.HorizontalAxis>
+        <telerik:RadCartesianChart.VerticalAxis>
+          <telerik:NumericalAxis ShowLabels="False" />
+        </telerik:RadCartesianChart.VerticalAxis>
+        <telerik:RadCartesianChart.Series>
+          <telerik:ScatterLineSeries ItemsSource="{Binding DataPoints}">
+            <telerik:ScatterLineSeries.XValueBinding>
+              <telerik:PropertyNameDataPointBinding PropertyName="Timestamp"/>
+            </telerik:ScatterLineSeries.XValueBinding>
+            <telerik:ScatterLineSeries.YValueBinding>
+              <telerik:PropertyNameDataPointBinding PropertyName="Value"/>
+            </telerik:ScatterLineSeries.YValueBinding>
+          </telerik:ScatterLineSeries>
+        </telerik:RadCartesianChart.Series>
+      </telerik:RadCartesianChart>
+    </StackLayout>
+  </ContentPage.Content>
 </ContentPage>
