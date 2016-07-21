@@ -14,14 +14,14 @@
       </telerik:RadCartesianChart.VerticalAxis>
 
       <telerik:RadCartesianChart.Series>
-        <telerik:SplineSeries ItemsSource="{Binding DData}">
-          <telerik:SplineSeries.ValueBinding>
+        <telerik:LineSeries ItemsSource="{Binding DData}">
+          <telerik:LineSeries.ValueBinding>
             <telerik:PropertyNameDataPointBinding PropertyName="Value"/>
-          </telerik:SplineSeries.ValueBinding>
-          <telerik:SplineSeries.CategoryBinding>
+          </telerik:LineSeries.ValueBinding>
+          <telerik:LineSeries.CategoryBinding>
             <telerik:PropertyNameDataPointBinding PropertyName="Category"/>
-          </telerik:SplineSeries.CategoryBinding>
-        </telerik:SplineSeries>
+          </telerik:LineSeries.CategoryBinding>
+        </telerik:LineSeries>
       </telerik:RadCartesianChart.Series>
     </telerik:RadCartesianChart>
   </Grid>
