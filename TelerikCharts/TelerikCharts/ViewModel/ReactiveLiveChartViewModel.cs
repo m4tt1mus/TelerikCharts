@@ -1,21 +1,27 @@
-﻿namespace TelerikCharts.ViewModel
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace TelerikCharts.ViewModel
 {
-    using System;
     using System.Collections.ObjectModel;
     using Xamarin.Forms;
 
-    public class LiveChartExampleViewModel
+    public class ReactiveLiveChartViewModel
     {
-        public LiveChartExampleViewModel()
+
+        public ReactiveLiveChartViewModel()
         {
             this.Random = new Random();
             this.DData = this.GetDateTimeData(200);
 
             Device.StartTimer(new TimeSpan(0, 0, 1), () =>
-              {
-                  this.UpdateData();
-                  return true;
-              });
+            {
+                this.UpdateData();
+                return true;
+            });
         }
 
         private int i = 201;

@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:telerik="clr-namespace:Telerik.XamarinForms.Chart;assembly=Telerik.XamarinForms.Chart"
+             x:Class="TelerikCharts.Pages.ReactiveLiveChartPage">
+  <Grid VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" BackgroundColor="White">
+    <telerik:RadCartesianChart x:Name="Chart">
+
+      <telerik:RadCartesianChart.HorizontalAxis>
+        <telerik:DateTimeContinuousAxis ShowLabels="False"/>
+      </telerik:RadCartesianChart.HorizontalAxis>
+      <telerik:RadCartesianChart.VerticalAxis>
+        <telerik:NumericalAxis ShowLabels="False"/>
+      </telerik:RadCartesianChart.VerticalAxis>
+
+      <telerik:RadCartesianChart.Series>
+        <telerik:SplineSeries ItemsSource="{Binding DData}">
+          <telerik:SplineSeries.ValueBinding>
+            <telerik:PropertyNameDataPointBinding PropertyName="Value"/>
+          </telerik:SplineSeries.ValueBinding>
+          <telerik:SplineSeries.CategoryBinding>
+            <telerik:PropertyNameDataPointBinding PropertyName="Category"/>
+          </telerik:SplineSeries.CategoryBinding>
+        </telerik:SplineSeries>
+      </telerik:RadCartesianChart.Series>
+    </telerik:RadCartesianChart>
+  </Grid>
+</ContentPage>

@@ -11,7 +11,7 @@ namespace TelerikCharts
     {
         public App()
         {
-            MainPage = new NavigationPage(new Pages.LiveChartExamplePage());
+            MainPage = new NavigationPage(new Pages.ReactiveLiveChartPage());
         }
 
         protected override void OnStart()

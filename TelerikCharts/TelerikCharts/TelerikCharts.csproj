@@ -39,11 +39,16 @@
     <Compile Include="Pages\LiveChartExamplePage.xaml.cs">
       <DependentUpon>LiveChartExamplePage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Pages\ReactiveLiveChartPage.xaml.cs">
+      <DependentUpon>ReactiveLiveChartPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Pages\BarChartPage.xaml.cs">
       <DependentUpon>BarChartPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="ViewModel\DateTimeData.cs" />
     <Compile Include="ViewModel\LiveChartExampleViewModel.cs" />
+    <Compile Include="ViewModel\ReactiveLiveChartViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="ReactiveUI, Version=6.5.0.0, Culture=neutral, processorArchitecture=MSIL">
@@ -107,6 +112,12 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Pages\LiveChartExamplePage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Pages\ReactiveLiveChartPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
