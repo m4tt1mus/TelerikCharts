@@ -11,7 +11,7 @@ namespace TelerikCharts
     {
         public App()
         {
-            MainPage = new NavigationPage(new Pages.TestPage2());
+            MainPage = new NavigationPage(new Pages.TestPage());
         }
 
         protected override void OnStart()
