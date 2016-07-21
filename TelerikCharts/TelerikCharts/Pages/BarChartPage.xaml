@@ -4,7 +4,7 @@
              xmlns:local="clr-namespace:TelerikCharts;assembly=TelerikCharts"
              xmlns:telerik="clr-namespace:Telerik.XamarinForms.Chart;assembly=Telerik.XamarinForms.Chart"
              xmlns:pages="clr-namespace:TelerikCharts.Pages;assembly=TelerikCharts"
-             x:Class="TelerikCharts.Pages.TestPage">
+             x:Class="TelerikCharts.Pages.BarChartPage">
   <ContentPage.Content>
     <Grid BackgroundColor="White">
       <Grid.RowDefinitions>

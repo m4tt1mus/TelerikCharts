@@ -4,9 +4,9 @@
     using System.Linq;
     using Xamarin.Forms;
 
-    public partial class TestPage : ContentPage
+    public partial class BarChartPage : ContentPage
     {
-        public TestPage()
+        public BarChartPage()
         {
             InitializeComponent();
 
