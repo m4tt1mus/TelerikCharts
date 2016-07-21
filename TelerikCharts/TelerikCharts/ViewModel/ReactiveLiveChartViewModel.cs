@@ -11,7 +11,6 @@ namespace TelerikCharts.ViewModel
 
     public class ReactiveLiveChartViewModel
     {
-
         public ReactiveLiveChartViewModel()
         {
             this.Random = new Random();
@@ -43,7 +42,6 @@ namespace TelerikCharts.ViewModel
             for (int i = 0; i < v; i++)
             {
                 result.Add(new DateTimeData() { Category = DateTime.Now.AddDays(i), Value = this.Random.Next(0, 100) });
-
             }
 
             return result;
