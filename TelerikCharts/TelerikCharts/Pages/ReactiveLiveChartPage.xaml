@@ -7,10 +7,10 @@
     <telerik:RadCartesianChart x:Name="Chart">
 
       <telerik:RadCartesianChart.HorizontalAxis>
-        <telerik:DateTimeContinuousAxis ShowLabels="False"/>
+        <telerik:DateTimeContinuousAxis ShowLabels="True"/>
       </telerik:RadCartesianChart.HorizontalAxis>
       <telerik:RadCartesianChart.VerticalAxis>
-        <telerik:NumericalAxis ShowLabels="False"/>
+        <telerik:NumericalAxis ShowLabels="True"/>
       </telerik:RadCartesianChart.VerticalAxis>
 
       <telerik:RadCartesianChart.Series>
