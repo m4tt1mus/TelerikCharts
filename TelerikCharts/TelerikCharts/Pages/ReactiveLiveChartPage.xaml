@@ -7,7 +7,12 @@
     <telerik:RadCartesianChart x:Name="Chart">
 
       <telerik:RadCartesianChart.HorizontalAxis>
-        <telerik:DateTimeContinuousAxis ShowLabels="True"/>
+        <telerik:DateTimeContinuousAxis ShowLabels="True"
+                                        LabelFormat="MMM.yy"
+                                        LabelFitMode="Rotate"
+                                        MajorStepUnit="Month"
+                                        MajorStep="1"
+                                        PlotMode="OnTicks"/>
       </telerik:RadCartesianChart.HorizontalAxis>
       <telerik:RadCartesianChart.VerticalAxis>
         <telerik:NumericalAxis ShowLabels="True"/>
